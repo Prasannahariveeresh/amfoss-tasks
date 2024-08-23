@@ -1,0 +1,9 @@
+{
+    "telegram_config": {
+        "bot_key": "7517282847:AAGg_z0xtrJugFK8NdX90cUyQRTxn-0vyyU"
+    },
+    "google_books_endpoints": {
+        "books_by_genre": "https://www.googleapis.com/books/v1/volumes?q=subject:{genre}&maxResults={max_results}",
+        "book_name_url": "https://www.googleapis.com/books/v1/volumes?q={book_name}&maxResults=1"
+    }
+}
