@@ -32,7 +32,7 @@ I was asked to created a CLI app using Python that accepts an mp4 file and retur
    - Prompt the user to choose one and download it.
 
 7. **Batch Mode**
-   - If batch mode is enabled, a directory should be specified instead of a single file.
+   - A directory should be specified instead of a single file if batch mode is enabled.
    - Automatically download subtitles for all movies within the specified directory instead of listing and prompting.
 
 ## Directory Structure
@@ -52,7 +52,17 @@ task-07
 - `HashAlgorithm` - This class deals with the hashing algorithm which is file size + 64bit sum of the first and last 64k of the file
 
 - `OpenSubtitles` - This class deals with scraping all the subtitle links
-    - `scrape_subtitles` function gets all the subtitle link from the website
+    - `scrape_subtitles` function gets all the subtitle links from the website
     - `download_subtitle` function downloading it as a batch or as a single file
 
-**run.py** - This is the main entry point that handles CLI argument
+**run.py** - This is the main entry point that handles the CLI argument
+
+## Example command to run
+```
+python run.py -l eng  -o ./output --match-by-hash ./inputs/plan-9-from-outer-space.mpeg4la
+```
+
+**For batch_mode:**
+```
+python run.py -l eng -b -o ./output --match-by-hash ./inputs/plan-9-from-outer-space.mpeg4la
+```
