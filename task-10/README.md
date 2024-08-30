@@ -1,10 +1,10 @@
 # Operation Pixel Merge
 
-This project uses OpenCV and Pillow, utilizing contouring technique to stitch together these fragmented parts to reveal the secret message!
+This project uses OpenCV and Pillow, utilizing contouring techniques to stitch together these fragmented parts to reveal the secret message!
 
 ## Overview
 
-The assets folder in this repository has a bunch of images, each of dimensions 512x512 pixels. Each one is composed of a white background with a **singular** coloured dot on it. The images are named with a number indicating their order in the sequence. 
+The assets folder in this repository has a bunch of images, each of dimensions 512x512 pixels. Each one is composed of a white background with a **singular** colored dot on it. The images are named with a number indicating their order in the sequence. 
 
 ## Directory Structure
 
@@ -22,7 +22,7 @@ task-10
 ```
 
 **OperationPixel.py**: This file contains two classes,
-1. `ImageProcessor` class takes in file path as input and `ImageProcessor(fp).find_dots()` finds the dot in the file using `cv2.findContour`
+1. `ImageProcessor` class takes in the file path as input and `ImageProcessor(fp).find_dots()` finds the dot in the file using `cv2.findContour`
 
 2. `ImageMerger` class takes in a list with all the paths of dots as input it has three main functions in it
 
@@ -32,9 +32,8 @@ task-10
 
     * `ImageMerger(fp_list).save_img()` - Saves the output image as `output.png` and opens it
 
-**run.py**: This file is the main entry point, which flows through the assets directory and gets all the file path in a list and initiates the `ImageMerger` class from `OperationPixel.py`
+**run.py**: This file is the main entry point, which flows through the assets directory gets all the file paths in a list, and initiates the `ImageMerger` class from `OperationPixel.py`
 
 ## Output
 
-**ZOOM IN FOR CLEAR VIEW**
 ![Operation Pixel Output](output.png)
