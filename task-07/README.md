@@ -1,18 +1,18 @@
 # Pirate's Dilemma
 
-In this task I've been asked to scrape data from OpenSubtitles website to download subtitles from it.
+In this task, I've been asked to scrape data from the OpenSubtitles website to download subtitles.
 
 ## Goal
 
-I was asked to created a CLI app using Python that accepts an mp4 file and returns a list of subtitles for it, allowing the user to choose and download their preferred option.
+I was asked to create a CLI app using Python that accepts an mp4 file and returns a list of subtitles for it, allowing the user to choose and download their preferred option.
 
 ## Requirements
 
 1. **Set Up Environment**
-   * As I'm using anaconda package manager, I created a virtual environment in anaconda
+   * As I'm using Anaconda package manager, I created a virtual environment in Anaconda
 
 2. **CLI Interface with Click**
-   * Using the click module the below mentioned parameters are accepted
+   * Using the click module the below-mentioned parameters are accepted
      - `-l, --language`: Filter subtitles by language.
      - `-o, --output`: Specify the output folder for the subtitles.
      - `-s, --file-size`: Filter subtitles by movie file size.
@@ -20,10 +20,10 @@ I was asked to created a CLI app using Python that accepts an mp4 file and retur
      - `-b, --batch-download`: Enable batch mode.
 
 3. **Find IMDb ID and Hash/Filesize**
-   - I've been asked to find IMDb ID from the filename, so I created a function to map movie name to it's IMDb ID where all these data are scraped from IMDb's website
+   - I've been asked to find the IMDb ID from the filename, so I created a function to map movie names to their IMDb ID where all these data are scraped from IMDb's website
 
 5. **Scrape Subtitles**
-    - Search using the IMDb ID and movie hash/file size (bonus points if you can come up with an algorithm to search using a selection of the three to maximise the chances of getting a result)
+    - Search using the IMDb ID and movie hash/file size (bonus points if you can come up with an algorithm to search using a selection of the three to maximize the chances of getting a result)
     - Apply the specified filters.
     - Sort the results by "Downloaded" in descending order.
 
