@@ -15,12 +15,19 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'HeroDex',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+      theme: ThemeData.dark().copyWith(
+        primaryColor: Colors.blueGrey,
+        scaffoldBackgroundColor: Colors.black,
         textTheme: const TextTheme(
           headlineMedium:
               TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
+          bodyMedium: TextStyle(color: Colors.white),
           // You can define more text styles here
+        ),
+        bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+          backgroundColor: Colors.blueGrey,
+          selectedItemColor: Colors.white,
+          unselectedItemColor: Colors.grey,
         ),
       ),
       home: const MainScreen(),
@@ -40,7 +47,7 @@ class _MainScreenState extends State<MainScreen> {
   final List<Widget> _children = [
     const HomePage(),
     const SuperheroListScreen(),
-    const FavoritesScreen(),
+    FavoritesScreen(),
   ];
 
   void onTabTapped(int index) {
@@ -68,7 +75,7 @@ class _MainScreenState extends State<MainScreen> {
           BottomNavigationBarItem(
             icon: Icon(Icons.star),
             label: 'Favorites',
-          )
+          ),
         ],
       ),
     );
