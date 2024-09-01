@@ -2,6 +2,7 @@
 
 Build a user-friendly superhero encyclopaedia app with Flutter and vanquish Dr.Dulldev’s schemes forever! This powerful framework by Google allows you to create beautiful and functional mobile applications for both Android and iOS.
 
+You can use `app-release.apk` to experience the UI on your mobile
 
 ## Features
 
@@ -14,7 +15,9 @@ Build a user-friendly superhero encyclopaedia app with Flutter and vanquish Dr.D
 
 ## Screenshots
 
-![home](images/home.jpeg)
-![about](images/about.jpeg)
-![search](images/search.jpeg)
-![favourites](images/favourites.jpeg)
+<div style="display: flex; flex-direction: row;">
+    <img src="images/home.jpeg" alt="HeroDex Home Screen" style="width: 25%; margin-right: 10px;">
+    <img src="images/about.jpeg" alt="HeroDex Superhero Profile" style="width: 25%; margin-right: 10px;">
+    <img src="images/search.jpeg" alt="HeroDex Favorites" style="width: 25%;margin-right: 10px;">
+    <img src="images/favourites.jpeg" alt="HeroDex Favorites" style="width: 25%;">
+</div>
