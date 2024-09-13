@@ -55,8 +55,8 @@ I've completed almost all the tasks except two of them, overall I felt that all 
     </tr>
     <tr>
         <td>2. Terminal Chaos</td>
-        <td>✅</td>
-        <td><a href="https://github.com/Prasannahariveeresh/amfoss-tasks/tree/main/task-02">Link</a></td>
+        <td>❌</td>
+        <td>-</td>
     </tr>
     <tr>
         <td>3. Hello, World!</td>
