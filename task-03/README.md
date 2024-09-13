@@ -1,4 +1,4 @@
-# Task-03: Exploring Multiple Programming Languages
+# Exploring Multiple Programming Languages
 
 In this task, I explored various programming languages by solving four sub-tasks in Python, Ruby, Elixir, Javascript, Java, Go, C, C++, Rust, and Haskell.
 
